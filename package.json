@@ -8,7 +8,8 @@
     "build": "vite build --base=/puppy-diary/",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "netlify deploy -p"
+    "deploy": "netlify deploy -p",
+    "watch": "npx vite build --watch"
   },
   "devDependencies": {
     "glob": "^8.1.0",
