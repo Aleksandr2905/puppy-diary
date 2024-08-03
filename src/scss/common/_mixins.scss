@@ -47,3 +47,27 @@ screen types:
     padding: $top-padding 0 0;
   }
 }
+
+@mixin google-store {
+  display: flex;
+  width: 288px;
+  height: 56px;
+  padding: 12px 24px 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 32px;
+  background: $_accent_color;
+  font-family: 'SemiBold';
+  font-weight: 600;
+  @include font(24, 36);
+  color: $_main_bg_color;
+  transition: $_transition;
+
+  @include media(desktop) {
+    &:hover,
+    &:focus {
+      outline: 6px solid $_hover_button;
+    }
+  }
+}

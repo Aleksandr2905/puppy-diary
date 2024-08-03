@@ -1,3 +1,47 @@
-<section id="hero">
-  <div class="container special-section">HERO</div>
+<section id="hero" class="hero-section">
+  <div class="container special-section">
+    <h1 class="hero-title">Ready for a paw-some puzzle adventure?</h1>
+    <p class="slogan">
+      Download <span>"Puppy Diary: Puzzle Blast"</span> now and start your
+      joyful journey of puzzle-solving and puppy pampering!
+    </p>
+    <picture>
+      <source
+        srcset="
+          ./img/hero/hero-desktop.png    1x,
+          ./img/hero/hero-desktop@2x.png 2x
+        "
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="./img/hero/hero-mobile.png 1x, ./img/hero/hero-mobile@2x.png 2x"
+        media="(max-width: 1439px)"
+      />
+      <img
+        src="./img/hero/hero-mobile.png"
+        alt="running girl and dog"
+        class="image"
+      />
+    </picture>
+    <a href="#" class="link">
+      <svg width="32" height="32">
+        <use href="./icons/sprite.svg#google-playstore" />
+      </svg>
+      Google Store
+    </a>
+    <div class="wrapper">
+      <div class="warning">
+        <svg width="51" height="46">
+          <use href="./icons/sprite.svg#exclamation-mark" />
+        </svg>
+        <p>DISCLAIMER</p>
+      </div>
+      <p class="warning-text">
+        WINSTARTSPACE.COM IS A PLATFORM FOR HAVING FUN. THE PROBABILITY OF
+        WINNING PLAYING THIS GAME CANNOT BE CONSIDERED THE SAME AS WINNING IN
+        REAL LIFE GAMES. GAME IS AVAILABLE TO ADULT AUDIENCES OVER 18 YEARS OF
+        AGE. ENJOY PLAYING THIS GAME!
+      </p>
+    </div>
+  </div>
 </section>

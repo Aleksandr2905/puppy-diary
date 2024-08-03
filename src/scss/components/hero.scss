@@ -1,1 +1,118 @@
-// styles
+.hero-section {
+  max-width: 320px;
+  margin: 0 auto;
+  background: radial-gradient(
+    49.49% 27.29% at 62.5% 47.87%,
+    $_hero_one_color_gradient 0%,
+    $_main_bg_color 100%
+  );
+
+  @include media(desktop) {
+    max-width: none;
+    background: radial-gradient(
+      65.89% 55.8% at 76.25% 44.2%,
+      $_hero_one_color_gradient 0%,
+      $_main_bg_color 100%
+    );
+  }
+}
+
+.hero-title {
+  margin-bottom: 40px;
+  font-family: 'Regular';
+  font-weight: 400;
+  @include font(32, 43.2);
+  text-transform: uppercase;
+  color: $_accent_color;
+
+  @include media(desktop) {
+    max-width: 758px;
+    margin-bottom: 80px;
+    @include font(64, 86.4);
+  }
+}
+
+.slogan {
+  font-family: 'Regular2';
+  font-weight: 400;
+  @include font(20, 29);
+
+  & span {
+    font-family: 'Bold';
+    font-weight: 700;
+  }
+
+  @include media(desktop) {
+    max-width: 540px;
+    @include font(32, 48);
+  }
+}
+
+.image {
+  margin-left: auto;
+  margin-top: -44px;
+
+  @include media(desktop) {
+    margin-top: 0;
+    position: absolute;
+    top: 33px;
+    right: -73px;
+  }
+}
+
+.link {
+  @include google-store;
+  margin-top: 18px;
+
+  @include media(desktop) {
+    margin-top: 80px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  margin-top: 40px;
+  padding: 16px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 24px;
+  border: 2px solid $_line_color;
+  background: $_disclaimer_bg;
+  box-shadow: 0px 16px 24px 0px $_shadow_color;
+
+  @include media(desktop) {
+    margin-top: 112px;
+    padding: 21px 48px;
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+.warning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  & p {
+    font-family: 'Bold';
+    font-weight: 700;
+    @include font(16, 24);
+  }
+}
+
+.warning-text {
+  max-width: 256px;
+  text-align: center;
+  font-family: 'Regular2';
+  font-weight: 400;
+  @include font(16, 24);
+
+  @include media(desktop) {
+    text-align: start;
+    max-width: none;
+    @include font(18, 24.3);
+  }
+}

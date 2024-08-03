@@ -11,6 +11,7 @@
 
 .special-section {
   @include section-padding(40px);
+  position: relative;
 
   @include media(desktop) {
     @include section-padding(60px);
