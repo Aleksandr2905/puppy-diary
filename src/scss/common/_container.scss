@@ -1,19 +1,10 @@
 .container {
   max-width: 320px;
   margin: 0 auto;
-  @include section-padding(80px);
+  padding: 80px 16px 0;
 
   @include media(desktop) {
-    max-width: 1096px;
-    @include section-padding(160px);
-  }
-}
-
-.special-section {
-  @include section-padding(40px);
-  position: relative;
-
-  @include media(desktop) {
-    @include section-padding(60px);
+    max-width: 1320px;
+    padding: 160px 0 0;
   }
 }
