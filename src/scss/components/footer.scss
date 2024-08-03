@@ -1,0 +1,49 @@
+.footer {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 16px 0 24px;
+  border-top: 1px solid $_main_color;
+
+  @include media(desktop) {
+    max-width: 100%;
+    padding: 24px 0;
+  }
+}
+
+.copyright {
+  text-align: center;
+  font-family: 'Regular2';
+  font-weight: 400;
+  @include font(16, 24);
+  margin-bottom: 23px;
+
+  @include media(desktop) {
+    @include font(18, 24.3);
+    margin-bottom: 64px;
+  }
+}
+
+.rules-container {
+  display: flex;
+  justify-content: center;
+}
+
+.rules {
+  font-family: 'Regular2';
+  font-weight: 400;
+  @include font(14, 21);
+
+  @include media(desktop) {
+    @include font(16, 24);
+  }
+}
+
+.rules:hover,
+.rules:focus {
+  color: $_accent_color;
+  transition: $_transition;
+}
+
+.rules:focus {
+  outline: 1px solid $_main_color;
+}
