@@ -19,20 +19,20 @@
   width: 63px;
   height: 48px;
 
+  &:hover,
+  &:focus {
+    scale: 1.1;
+    transition: $_transition;
+  }
+
+  &:focus {
+    outline: 1px solid $_main_color;
+  }
+
   @include media(desktop) {
     width: 85px;
     height: 64px;
   }
-}
-
-.logo:hover,
-.logo:focus {
-  scale: 1.1;
-  transition: $_transition;
-}
-
-.logo:focus {
-  outline: 1px solid $_main_color;
 }
 
 .burger {
@@ -68,14 +68,14 @@
   font-family: 'Regular2';
   font-weight: 400;
   @include font(18, 24.3);
-}
 
-.nav-link:hover,
-.nav-link:focus {
-  color: $_accent_color;
-  transition: $_transition;
-}
+  &:hover,
+  &:focus {
+    color: $_accent_color;
+    transition: $_transition;
+  }
 
-.nav-link:focus {
-  outline: 1px solid $_main_color;
+  &:focus {
+    outline: 1px solid $_main_color;
+  }
 }

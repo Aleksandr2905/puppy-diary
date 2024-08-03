@@ -24,16 +24,16 @@
   font-family: 'Regular2';
   font-weight: 400;
   @include font(16, 24);
-}
 
-.modal-item:not(:last-child) {
-  border-bottom: 1px solid $_line_color;
-}
+  &:not(:last-child) {
+    border-bottom: 1px solid $_line_color;
+  }
 
-.modal-item:hover,
-.modal-item:focus {
-  color: $_accent_color;
-  transition: $_transition;
+  &:hover,
+  &:focus {
+    color: $_accent_color;
+    transition: $_transition;
+  }
 }
 
 .is-hidden {

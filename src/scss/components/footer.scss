@@ -36,14 +36,14 @@
   @include media(desktop) {
     @include font(16, 24);
   }
-}
 
-.rules:hover,
-.rules:focus {
-  color: $_accent_color;
-  transition: $_transition;
-}
+  &:hover,
+  &:focus {
+    color: $_accent_color;
+    transition: $_transition;
+  }
 
-.rules:focus {
-  outline: 1px solid $_main_color;
+  &:focus {
+    outline: 1px solid $_main_color;
+  }
 }
