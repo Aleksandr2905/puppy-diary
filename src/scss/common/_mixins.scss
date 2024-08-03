@@ -39,3 +39,11 @@ screen types:
 
   line-height: math.div(math.round($result * 100), 100);
 }
+
+@mixin section-padding($top-padding) {
+  padding: $top-padding 16px 0;
+
+  @include media(desktop) {
+    padding: $top-padding 0 0;
+  }
+}
