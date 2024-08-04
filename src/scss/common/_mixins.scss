@@ -83,3 +83,11 @@ screen types:
     @include font(24, 36);
   }
 }
+
+@mixin section-padding($top-padding) {
+  padding: $top-padding 16px 0;
+
+  @include media(desktop) {
+    padding: $top-padding 0 0;
+  }
+}
