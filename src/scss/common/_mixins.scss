@@ -85,9 +85,9 @@ screen types:
 }
 
 @mixin section-padding($top-padding) {
-  padding: $top-padding 16px 0;
+  padding: $top-padding 16px 80px;
 
   @include media(desktop) {
-    padding: $top-padding 0 0;
+    padding: $top-padding 0 160px;
   }
 }

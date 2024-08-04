@@ -14,15 +14,37 @@
   }
 }
 
-// .text {
-//   width: 233px;
-//   font-family: 'Regular2';
-//   font-weight: 400;
-//   @include font(16, 24);
+.policies-main-title {
+  font-family: 'Bold';
+  font-weight: 700;
+  @include font(24, 36);
 
-//   & span {
-//     font-family: 'Bold';
-//     font-weight: 700;
-//     color: $_accent_color;
-//   }
-// }
+  @include media(desktop) {
+    @include font(48, 72);
+  }
+}
+
+.policies-secondary-title {
+  font-family: 'Bold';
+  font-weight: 700;
+  @include font(20, 30);
+
+  @include media(desktop) {
+    @include font(24, 36);
+  }
+}
+
+.policies-text {
+  font-family: 'Regular2';
+  font-weight: 400;
+  @include font(16, 24);
+
+  & span {
+    font-family: 'Bold';
+    font-weight: 700;
+  }
+
+  @include media(desktop) {
+    @include font(18, 27);
+  }
+}

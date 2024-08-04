@@ -10,9 +10,14 @@
 }
 
 .special-section {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
   @include section-padding(40px);
 
   @include media(desktop) {
+    max-width: 1096px;
+    gap: 26px;
     @include section-padding(140px);
   }
 }
