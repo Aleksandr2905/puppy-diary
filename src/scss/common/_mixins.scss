@@ -57,9 +57,29 @@ screen types:
   transition: $_transition;
 
   @include media(desktop) {
+    width: 312px;
+    height: 64px;
+
     &:hover,
     &:focus {
       outline: 6px solid $_hover_button;
     }
+  }
+}
+
+@mixin text-style($width, $span-color: $accent-color) {
+  width: $width;
+  font-family: 'Regular2';
+  font-weight: 400;
+  @include font(16, 24);
+
+  & span {
+    font-family: 'Bold';
+    font-weight: 700;
+    color: $span-color;
+  }
+
+  @include media(desktop) {
+    @include font(24, 36);
   }
 }

@@ -1,0 +1,28 @@
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Regular';
+  font-weight: 400;
+  @include font(32, 43.2);
+  text-transform: uppercase;
+  color: $_accent_color;
+
+  @include media(desktop) {
+    margin-bottom: 80px;
+    text-transform: none;
+    @include font(56, 75.6);
+  }
+}
+
+// .text {
+//   width: 233px;
+//   font-family: 'Regular2';
+//   font-weight: 400;
+//   @include font(16, 24);
+
+//   & span {
+//     font-family: 'Bold';
+//     font-weight: 700;
+//     color: $_accent_color;
+//   }
+// }

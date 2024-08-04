@@ -1,1 +1,114 @@
-// styles
+.stars {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 46px;
+    left: 16px;
+    z-index: -1;
+    width: 276px;
+    height: 415px;
+    background-image: url('./../img/about/about-stars-mobile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    &::before {
+      background-image: url('./../img/about/about-stars-mobile@2x.png');
+    }
+  }
+
+  @include media(desktop) {
+    &::before {
+      bottom: 40px;
+      left: 125px;
+      width: 1186px;
+      height: 524px;
+      background-image: url('./../img/about/about-stars-desktop.png');
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      &::before {
+        background-image: url('./../img/about/about-stars-desktop@2x.png');
+      }
+    }
+  }
+}
+
+.about-text {
+  @include text-style(_, _);
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    max-width: 768px;
+    margin-bottom: 0;
+    margin-left: 108px;
+  }
+}
+
+.about-wrapper {
+  display: block;
+
+  @include media(desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.about-image {
+  margin-left: 37px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -23px;
+    z-index: -10;
+    width: 227px;
+    height: 223px;
+    background: $_ellipse;
+    filter: blur(80px);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 33px;
+    z-index: -1;
+    width: 152px;
+    height: 5px;
+    background-image: url('./../icons/about-ellipse.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @include media(desktop) {
+    margin-left: 0;
+    margin-right: 43px;
+    margin-top: -177px;
+
+    &::before {
+      top: 16px;
+      left: 18px;
+      width: 323.041px;
+      height: 317.718px;
+      border-radius: 323.041px;
+      transform: rotate(38.825deg);
+    }
+
+    &::after {
+      bottom: -2px;
+      left: 62px;
+      width: 287px;
+      height: 8px;
+    }
+  }
+}

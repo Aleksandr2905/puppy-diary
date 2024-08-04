@@ -1,1 +1,68 @@
-//
+.play-bg-element {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 132px;
+    width: 191.133px;
+    height: 405.712px;
+    transform: rotate(131.511deg);
+    border-radius: 405.712px;
+    opacity: 0.6;
+    background: #887fe8;
+    filter: blur(60px);
+  }
+
+  @include media(desktop) {
+    &::before {
+      top: 88px;
+      right: 204px;
+      width: 305.167px;
+      height: 1014.069px;
+      transform: rotate(-33.055deg);
+      border-radius: 1014.069px;
+      filter: blur(120px);
+    }
+  }
+}
+
+.play-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include media(desktop) {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 80px;
+  }
+}
+
+.play-item {
+  display: flex;
+  max-height: 296px;
+  padding: 24px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  border-radius: 32px;
+  border: 2px solid $_line_color;
+  background: $_card_bg;
+  box-shadow: 0px 16px 24px 0px $_shadow_color;
+  backdrop-filter: blur(120px);
+
+  @include media(desktop) {
+    max-width: 312px;
+    max-height: 356px;
+    padding: 24px;
+  }
+}
+
+.play-text {
+  @include text-style(_, _);
+  text-align: center;
+}

@@ -1,1 +1,149 @@
-// styles
+.section-advantages {
+  position: relative;
+  overflow: hidden;
+
+  @include media(desktop) {
+    overflow: visible;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 55px;
+      right: 436px;
+      width: 305.167px;
+      height: 1014.069px;
+      transform: rotate(40.162deg);
+      border-radius: 1014.069px;
+      opacity: 0.6;
+      background: $_ellipse;
+      filter: blur(120px);
+    }
+  }
+}
+
+.advant-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 220px;
+    height: 221px;
+    background: $_circle;
+    opacity: 0.6;
+    filter: blur(60px);
+    bottom: 283px;
+    right: -60px;
+  }
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 73px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 425px;
+      height: 446px;
+      border-radius: 446px;
+      opacity: 0.6;
+      background: $_circle;
+      filter: blur(120px);
+      bottom: 90px;
+      right: 0;
+      left: 2px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 209px;
+      height: 199px;
+      bottom: 0px;
+      left: 24px;
+      background-image: url('./../img/advantages/advant-dog-desktop.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      &::after {
+        background-image: url('./../img/advantages/advant-dog-desktop@2x.png');
+      }
+    }
+  }
+}
+
+.advantages-stars {
+  position: relative;
+
+  @include media(desktop) {
+    &::after {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      bottom: 213px;
+      left: 58px;
+      background-image: url('./../icons/star.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      bottom: 173px;
+      right: 96px;
+      background-image: url('./../icons/star.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.advant-item {
+  display: flex;
+  padding: 32px 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  border-radius: 32px;
+  border: 2px solid $_line_color;
+  background: $_card_bg;
+  box-shadow: 0px 16px 24px 0px $_shadow_color;
+  backdrop-filter: blur(120px);
+
+  @include media(desktop) {
+    width: 424px;
+  }
+}
+
+.advantages-text {
+  @include text-style(233px, $_accent_color);
+
+  @include media(desktop) {
+    @include text-style(376px, $_accent_color);
+  }
+}
+
+.advant-img {
+  width: 231px;
+  height: 231px;
+
+  @include media(desktop) {
+    margin: 0 auto;
+    width: 360px;
+    height: 360px;
+  }
+}
