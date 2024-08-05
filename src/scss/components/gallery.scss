@@ -1,1 +1,74 @@
-// styles
+.gallery-element {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 101px;
+    left: -65px;
+    width: 220px;
+    height: 221px;
+    background: $_circle;
+    opacity: 0.6;
+    filter: blur(60px);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 79px;
+    height: 57px;
+    top: 117px;
+    right: 26px;
+    z-index: 1;
+    background-image: url('./../img/gallery/gallery-dog.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.image-slider {
+  position: relative;
+  display: flex;
+  height: 514px;
+  padding: 16px 16px 16px 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 32px;
+  border: 1px solid $_line_color;
+  background: $_card_bg;
+}
+
+.swiper-slide {
+  margin-right: 24px;
+}
+
+.image-slider_image {
+  text-align: center;
+}
+
+.image-slider_image img {
+  border-radius: 20px;
+  max-width: 100%;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: $_main_bg_color;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $_accent_color;
+}
+
+.swiper-button-next {
+  display: none;
+}
+
+.swiper-button-prev {
+  display: none;
+}
