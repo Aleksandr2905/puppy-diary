@@ -69,6 +69,12 @@
   background: $_main_bg_color;
 }
 
+.pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 6px;
+}
+
 .swiper-pagination-bullet-active {
   background-color: $_accent_color;
 }
