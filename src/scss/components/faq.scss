@@ -67,12 +67,12 @@
 
 .faq-item {
   display: flex;
-  padding: 12px 24px;
+  padding: 12px 22px;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
   border-radius: 32px;
-  outline: 2px solid $_line_color;
+  border: 2px solid $_line_color;
   background: $_card_bg;
   box-shadow: 0px 16px 24px 0px $_shadow_color;
   backdrop-filter: blur(120px);
