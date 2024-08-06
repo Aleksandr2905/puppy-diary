@@ -69,6 +69,10 @@
     padding: 16px 16px 0 16px;
   }
 
+  & img {
+    width: 100%;
+  }
+
   @include media(desktop) {
     width: 312px;
     height: 312px;

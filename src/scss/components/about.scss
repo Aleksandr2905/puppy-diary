@@ -61,9 +61,7 @@
   }
 }
 
-.about-image {
-  max-width: 185px;
-  max-height: 242px;
+.about-wrap-image {
   margin-left: 37px;
   position: relative;
 
@@ -93,8 +91,6 @@
   }
 
   @include media(desktop) {
-    max-width: 349px;
-    max-height: 457px;
     margin-left: 0;
     margin-right: 43px;
     margin-top: -177px;
@@ -114,5 +110,11 @@
       width: 287px;
       height: 8px;
     }
+  }
+}
+
+.about-image {
+  @include media(desktop) {
+    width: 100%;
   }
 }
