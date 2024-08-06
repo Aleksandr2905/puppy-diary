@@ -31,6 +31,10 @@
   width: 63px;
   height: 48px;
 
+  & img {
+    width: 100%;
+  }
+
   &:hover,
   &:focus {
     scale: 1.1;
