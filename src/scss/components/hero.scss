@@ -20,11 +20,11 @@
 .hero-container {
   max-width: 320px;
   margin: 0 auto;
-  padding: 40px 16px 0;
+  padding: 110px 16px 0;
 
   @include media(desktop) {
     max-width: 1096px;
-    padding: 60px 0 0;
+    padding: 160px 0 0;
     position: relative;
   }
 }
@@ -67,7 +67,7 @@
   @include media(desktop) {
     margin-top: 0;
     position: absolute;
-    top: 33px;
+    top: 133px;
     right: -73px;
   }
 }
