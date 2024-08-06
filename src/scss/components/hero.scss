@@ -61,10 +61,14 @@
 }
 
 .image {
+  width: 280px;
+  height: 291px;
   margin-left: auto;
   margin-top: -44px;
 
   @include media(desktop) {
+    width: 650px;
+    height: 678px;
     margin-top: 0;
     position: absolute;
     top: 133px;
