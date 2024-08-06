@@ -33,6 +33,24 @@
       background-image: url('./../img/gallery/gallery-dog@2x.webp');
     }
   }
+
+  @include media(desktop) {
+    &::before {
+      top: 316px;
+      left: -39px;
+      width: 425px;
+      height: 446px;
+      border-radius: 446px;
+      filter: blur(120px);
+    }
+
+    &::after {
+      width: 233px;
+      height: 168px;
+      top: 179px;
+      right: 111px;
+    }
+  }
 }
 
 .image-slider {
@@ -47,16 +65,52 @@
   border-radius: 32px;
   border: 1px solid $_line_color;
   background: $_card_bg;
+
+  @include media(desktop) {
+    padding: 80px 64px;
+    height: 714px;
+    border: 2px solid $_line_color;
+    box-shadow: 0px 16px 24px 0px $_shadow_color;
+    backdrop-filter: blur(120px);
+  }
 }
 
 .swiper-slide {
   margin-right: 24px;
 }
 
-.slider-mobile {
+.slider-image {
   border-radius: 20px;
   max-width: 100%;
+
+  @include media(desktop) {
+    margin: 0 auto;
+  }
 }
+
+.mobile {
+  display: block;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.desktop {
+  display: none;
+
+  @include media(desktop) {
+    display: flex;
+  }
+}
+
+// .swiper-pagination {
+//   display: block;
+
+//   @include media(desktop) {
+//     display: none;
+//   }
+// }
 
 .swiper-pagination-bullet {
   width: 12px;
@@ -69,16 +123,71 @@
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
   margin: 0 6px;
+
+  @include media(desktop) {
+    margin: 0 6px 22px;
+  }
 }
 
 .swiper-pagination-bullet-active {
   background-color: $_accent_color;
 }
 
-.swiper-button-next {
-  display: none;
-}
-
+.swiper-button-next,
 .swiper-button-prev {
   display: none;
+
+  @include media(desktop) {
+    display: block;
+    background: none;
+    color: transparent;
+
+    & svg {
+      width: auto;
+      height: auto;
+    }
+
+    &::after,
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.custom-button {
+  display: none;
+
+  @include media(desktop) {
+    display: flex;
+    width: 64px;
+    height: 64px;
+    padding: 4px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    position: absolute;
+    top: 50%;
+    border-radius: 32px;
+    background: $_accent_color;
+    transition: $_transition;
+
+    &:hover,
+    &:focus {
+      outline: 6px solid $_hover_button;
+    }
+  }
+}
+
+.custom-next {
+  @include media(desktop) {
+    right: 64px;
+  }
+}
+
+.custom-prev {
+  @include media(desktop) {
+    left: 64px;
+    transform: rotate(180deg);
+  }
 }

@@ -3,54 +3,130 @@
     <h2 class="title">Gallery</h2>
     <div class="image-slider swiper-container swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
+        <!-- ===== Mobile Slides =====  -->
+
+        <div class="swiper-slide mobile">
           <img
             srcset="
               ./img/gallery/slide-01-mobile.webp    1x,
               ./img/gallery/slide-01-mobile@2x.webp 2x
             "
             src="./img/gallery/slide-01-mobile.webp"
-            alt=""
-            class="slider-mobile"
+            alt="Game where the player collects points by matching identical elements"
+            class="slider-image"
           />
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide mobile">
           <img
             srcset="
               ./img/gallery/slide-02-mobile.webp    1x,
               ./img/gallery/slide-02-mobile@2x.webp 2x
             "
             src="./img/gallery/slide-02-mobile.webp"
-            alt=""
-            class="slider-mobile"
+            alt="Game where the player matches identical elements to create combos"
+            class="slider-image"
           />
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide mobile">
           <img
             srcset="
               ./img/gallery/slide-03-mobile.webp    1x,
               ./img/gallery/slide-03-mobile@2x.webp 2x
             "
             src="./img/gallery/slide-03-mobile.webp"
-            alt=""
-            class="slider-mobile"
+            alt="Game's wheel of fortune with various bonuses and rewards"
+            class="slider-image"
           />
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide mobile">
           <img
             srcset="
               ./img/gallery/slide-04-mobile.webp    1x,
               ./img/gallery/slide-04-mobile@2x.webp 2x
             "
             src="./img/gallery/slide-04-mobile.webp"
-            alt=""
-            class="slider-mobile"
+            alt="Treasure chest containing game bonuses and rewards"
+            class="slider-image"
           />
+        </div>
+        <!-- ===== Desktop Slides =====  -->
+
+        <div class="swiper-slide desktop">
+          <div class="slider-image">
+            <img
+              srcset="
+                ./img/gallery/slide-01-desktop.webp    1x,
+                ./img/gallery/slide-01-desktop@2x.webp 2x
+              "
+              src="./img/gallery/slide-01-desktop.webp"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="swiper-slide desktop">
+          <div class="slider-image">
+            <img
+              srcset="
+                ./img/gallery/slide-02-desktop.webp    1x,
+                ./img/gallery/slide-02-desktop@2x.webp 2x
+              "
+              src="./img/gallery/slide-02-desktop.webp"
+              alt=""
+              class="slider-image"
+            />
+          </div>
+        </div>
+        <div class="swiper-slide desktop">
+          <div class="slider-image">
+            <img
+              srcset="
+                ./img/gallery/slide-03-desktop.webp    1x,
+                ./img/gallery/slide-03-desktop@2x.webp 2x
+              "
+              src="./img/gallery/slide-03-desktop.webp"
+              alt=""
+              class="slider-image"
+            />
+          </div>
+        </div>
+        <div class="swiper-slide desktop">
+          <div class="slider-image">
+            <img
+              srcset="
+                ./img/gallery/slide-04-desktop.webp    1x,
+                ./img/gallery/slide-04-desktop@2x.webp 2x
+              "
+              src="./img/gallery/slide-04-desktop.webp"
+              alt=""
+              class="slider-image"
+            />
+          </div>
+        </div>
+        <div class="swiper-slide desktop">
+          <div class="slider-image">
+            <img
+              srcset="
+                ./img/gallery/slide-05-desktop.webp    1x,
+                ./img/gallery/slide-05-desktop@2x.webp 2x
+              "
+              src="./img/gallery/slide-05-desktop.webp"
+              alt=""
+              class="slider-image"
+            />
+          </div>
         </div>
       </div>
 
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next custom-button custom-next">
+        <svg width="34" height="26">
+          <use href="./icons/sprite.svg#arrrow" />
+        </svg>
+      </div>
+      <div class="swiper-button-prev custom-button custom-prev">
+        <svg width="34" height="26">
+          <use href="./icons/sprite.svg#arrrow" />
+        </svg>
+      </div>
 
       <div class="swiper-pagination"></div>
     </div>

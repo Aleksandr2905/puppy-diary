@@ -1,13 +1,13 @@
 new Swiper('.swiper-container', {
   spaceBetween: 24,
   slidesPerView: 1,
-  loop: true,
+  // loop: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next.custom-next',
+    prevEl: '.swiper-button-prev.custom-prev',
   },
 });
