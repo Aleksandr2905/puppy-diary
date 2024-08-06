@@ -11,7 +11,7 @@
       left: 109px;
       width: 231px;
       height: 284px;
-      background-image: url('./../img/benefits/benefits-dog-desktop.png');
+      background-image: url('./../img/benefits/benefits-dog-desktop.webp');
       background-size: cover;
       background-repeat: no-repeat;
     }
@@ -20,7 +20,7 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       &::after {
-        background-image: url('./../img/benefits/benefits-dog-desktop@2x.png');
+        background-image: url('./../img/benefits/benefits-dog-desktop@2x.webp');
       }
     }
 
@@ -34,6 +34,7 @@
       border-radius: 446px;
       opacity: 0.6;
       background: $_circle;
+      z-index: -1;
       filter: blur(120px);
     }
   }

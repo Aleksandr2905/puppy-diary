@@ -14,6 +14,7 @@
     width: 220px;
     height: 221px;
     background: $_circle;
+    z-index: -1;
     opacity: 0.6;
     filter: blur(60px);
   }
@@ -40,7 +41,7 @@
       height: 1475px;
       top: 122px;
       left: 41px;
-      background-image: url('./../img/faq/faq-stars-desktop.png');
+      background-image: url('./../img/faq/faq-stars-desktop.webp');
       background-size: cover;
       background-repeat: no-repeat;
     }
@@ -49,7 +50,7 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       &::after {
-        background-image: url('./../img/faq/faq-stars-desktop@2x.png');
+        background-image: url('./../img/faq/faq-stars-desktop@2x.webp');
       }
     }
   }

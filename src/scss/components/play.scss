@@ -11,7 +11,8 @@
     transform: rotate(131.511deg);
     border-radius: 405.712px;
     opacity: 0.6;
-    background: #887fe8;
+    background: $_ellipse;
+    z-index: -1;
     filter: blur(60px);
   }
 

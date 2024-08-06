@@ -9,7 +9,7 @@
     z-index: -1;
     width: 276px;
     height: 415px;
-    background-image: url('./../img/about/about-stars-mobile.png');
+    background-image: url('./../img/about/about-stars-mobile.webp');
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -18,7 +18,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     &::before {
-      background-image: url('./../img/about/about-stars-mobile@2x.png');
+      background-image: url('./../img/about/about-stars-mobile@2x.webp');
     }
   }
 
@@ -28,14 +28,14 @@
       left: 125px;
       width: 1186px;
       height: 524px;
-      background-image: url('./../img/about/about-stars-desktop.png');
+      background-image: url('./../img/about/about-stars-desktop.webp');
     }
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       &::before {
-        background-image: url('./../img/about/about-stars-desktop@2x.png');
+        background-image: url('./../img/about/about-stars-desktop@2x.webp');
       }
     }
   }
