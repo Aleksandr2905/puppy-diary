@@ -53,6 +53,5 @@ export default defineConfig(({ command }) => {
         },
       },
     },
-    // base: '/puppy-diary',
   };
 });

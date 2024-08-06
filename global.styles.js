@@ -9,9 +9,7 @@ const typographyStyles = '@import "./src/scss/common/_typography.scss"';
 const styles = [
   variablesStyles,
   breakpointsStyles,
-  //   colorsStyles,
   mixinsStyles,
-  //   baseStyles,
   resetStyles,
   fontsStyles,
   containerStyles,
